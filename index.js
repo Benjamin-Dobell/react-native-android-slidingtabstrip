@@ -1,3 +1,2 @@
-import { NativeModules } from 'react-native'
-
-module.exports = NativeModules.SlidingTabStripAndroid
+export { default as SlidingTabStripAndroid } from './SlidingTabStripAndroid'
+export { default as SlidingTabViewPagerAndroid} from './SlidingTabViewPagerAndroid'

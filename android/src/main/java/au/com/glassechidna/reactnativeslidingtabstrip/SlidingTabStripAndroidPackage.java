@@ -7,16 +7,17 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class SlidingTabStripPackage implements ReactPackage
+public class SlidingTabStripAndroidPackage implements ReactPackage
 {
 	@Override
 	public List<NativeModule> createNativeModules(final ReactApplicationContext reactContext)
 	{
 		List<NativeModule> modules = new ArrayList<NativeModule>();
-		modules.add(new SlidingTabStripModule(reactContext));
+		modules.add(new SlidingTabStripAndroidModule(reactContext));
 		return modules;
 	}
 
@@ -29,6 +30,9 @@ public class SlidingTabStripPackage implements ReactPackage
 	@Override
 	public List<ViewManager> createViewManagers(final ReactApplicationContext reactContext)
 	{
-		return Collections.emptyList();
+		return Arrays.<ViewManager>asList(
+			new ReactSlidingTabStripManager(),
+			new ReactSlidingTabViewPagerManager()
+		);
 	}
 }
