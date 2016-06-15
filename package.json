@@ -1,7 +1,7 @@
 {
   "name": "react-native-android-slidingtabstrip",
-  "version": "0.1.0",
-  "description": "React Native Module wrapper for a native Android SlidingTabStrip view",
+  "version": "0.1.1",
+  "description": "React Native sliding tab strip implementation for Android",
   "main": "index.js",
   "keywords": [
     "react",
@@ -11,7 +11,8 @@
     "custom-view",
     "tabs",
     "view-pager",
-    "tab-strip"
+    "tab-strip",
+    "sliding-tab-strip"
   ],
   "author": {
     "name": "Benjamin Dobell",
@@ -26,8 +27,6 @@
     "url": "git://github.com/Benjamin-Dobell/react-native-android-slidingtabstrip.git"
   },
   "license": "MIT",
-  "rnpm": {
-  },
   "devDependencies": {
     "flow": "^0.2.3",
     "flow-bin": "^0.26.0"
