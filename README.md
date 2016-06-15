@@ -91,3 +91,8 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
   }
 ```
 
+### Screenshot
+
+![Screenshot]
+(http://benjamin-dobell.github.io/react-native-android-slidingtabstrip/screenshot.png)
+
