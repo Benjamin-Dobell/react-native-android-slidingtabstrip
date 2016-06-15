@@ -1,6 +1,12 @@
 # Install
 
+Install the node module:
+
     npm install --save react-native-android-slidingtabstrip
+
+Then link the native code into your Android project using [rnpm](https://github.com/rnpm/rnpm):
+
+    rnpm link
 
 # Usage
 
