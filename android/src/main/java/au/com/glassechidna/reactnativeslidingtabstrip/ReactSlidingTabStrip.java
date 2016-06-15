@@ -95,9 +95,6 @@ import com.facebook.react.views.view.ReactViewGroup;
 
 		super.dispatchDraw(canvas);
 
-		setHorizontalFadingEdgeEnabled(false);
-		setVerticalFadingEdgeEnabled(false);
-
 		final int tabCount = getTabContainer().getChildCount();
 
 		if (isInEditMode() || tabCount == 0)
