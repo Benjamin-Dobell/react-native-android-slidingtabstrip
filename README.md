@@ -77,7 +77,7 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
             </Text>
           )}
         </SlidingTabStripAndroid>
-        <ViewPager {...pagerProps} style={{flex: 1}}>
+        <ViewPager style={{flex: 1}}>
           {tabs.map((tab, index) =>
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'stretch'}} key={index}>
               <Text key={index} style={{flex: 1, color: '#fff', fontSize: 12, textAlign: 'center', margin: 10}}>
