@@ -48,7 +48,7 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
       },
       {
         title: 'Tab 2',
-        content: 'This is a staight-forward sliding tab strip implementation for Android.'
+        content: 'This is a straight-forward sliding tab strip implementation for Android.'
       },
       {
         title: 'Tab 3',
