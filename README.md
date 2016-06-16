@@ -10,11 +10,11 @@ Then link the native code into your Android project using [rnpm](https://github.
 
 # Usage
 
-This library provides two views that can be used together with any native Android ViewPager, typically you'll just use the official React Native provided `ViewPager`.
+This library provides two views that can be used together with any native Android ViewPager, typically you'll just use the official React Native provided `ViewPagerAndroid`.
 
 ## SlidingTabViewPagerAndroid
 
-This is a wrapper view. You must place inside it a single `ViewPager` and a single `SlidingTabStripAndroid`.
+This is a wrapper view. You must place inside it a single ViewPager (e.g. `ViewPagerAndroid`) and a single `SlidingTabStripAndroid`.
 
 This view doesn't do any rendering of its own, it exists purely to create an association between the tab strip and the view pager.
 
@@ -77,7 +77,7 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
             </Text>
           )}
         </SlidingTabStripAndroid>
-        <ViewPager style={{flex: 1}}>
+        <ViewPagerAndroid style={{flex: 1}}>
           {tabs.map((tab, index) =>
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'stretch'}} key={index}>
               <Text key={index} style={{flex: 1, color: '#fff', fontSize: 12, textAlign: 'center', margin: 10}}>
@@ -85,7 +85,7 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
               </Text>
             </View>
           )}
-        </ViewPager>
+        </ViewPagerAndroid>
       </SlidingTabViewPagerAndroid>
     )
   }
