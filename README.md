@@ -63,7 +63,7 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
         content: 'Some content for tab 5.'
       },
       {
-        title: 'Tab 5',
+        title: 'Tab 6',
         content: 'Some content for tab 6.'
       }
     ]
