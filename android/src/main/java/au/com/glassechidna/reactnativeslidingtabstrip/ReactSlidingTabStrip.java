@@ -47,9 +47,17 @@ import com.facebook.react.views.view.ReactViewGroup;
 
 	public void setViewPager(final ViewPager viewPager)
 	{
+		if (this.viewPager != null)
+		{
+			this.viewPager.removeOnPageChangeListener(pageChangeListener);
+		}
+
 		this.viewPager = viewPager;
 
-		viewPager.addOnPageChangeListener(pageChangeListener);
+		if (viewPager != null)
+		{
+			viewPager.addOnPageChangeListener(pageChangeListener);
+		}
 	}
 
 	public void setScrollOffset(final int scrollOffset)
