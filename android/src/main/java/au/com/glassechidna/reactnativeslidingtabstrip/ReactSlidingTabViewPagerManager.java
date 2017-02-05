@@ -52,4 +52,13 @@ public class ReactSlidingTabViewPagerManager extends ViewGroupManager<ReactSlidi
 			parent.setSlidingTabStrip(null);
 		}
 	}
+
+	@Override
+	public void onDropViewInstance(final ReactSlidingTabViewPager view)
+	{
+		super.onDropViewInstance(view);
+
+		view.setSlidingTabStrip(null);
+		view.setViewPager(null);
+	}
 }
