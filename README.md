@@ -1,3 +1,5 @@
+![npm version](https://img.shields.io/npm/v/react-native-android-slidingtabstrip.svg)
+
 # Install
 
 Install the node module:
