@@ -27,7 +27,7 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
 ### Properties
 
 | Property              | Type    | Description                                                                                                                                                                                                                                                                                                                                           |
-|-----------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
+| --------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | removeClippedSubviews | boolean | Experimental: When true, offscreen child views (whose `overflow` value is `hidden`) are removed from their native backing superview when offscreen. This can improve scrolling performance on long lists. The default value is true.  __Note__: Inherited behaviour from ScrollView.                                                                  |
 | endFillColor          | color   | Sometimes a sliding tab strip takes up more space than its content fills. When this is the case, this prop will fill the rest of the tab strip with a color to avoid setting a background and creating unnecessary overdraw. This is an advanced optimization that is not needed in the general case.  __Note__: Inherited behaviour from ScrollView. |
 | scrollOffset          | number  | Instead of scrolling exactly to the start of the selected tab, offset the our scroll X by this amount (rounded to the nearest pixel).                                                                                                                                                                                                                 |
@@ -36,7 +36,6 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
 | dividerWidth          | number  | Width of the tab dividers.                                                                                                                                                                                                                                                                                                                            |
 | indicatorColor        | color   | Color of the selected tab indicator.                                                                                                                                                                                                                                                                                                                  |
 | dividerColor          | color   | Color of the tab dividers.                                                                                                                                                                                                                                                                                                                            |
-|                       |         |                                                                                                                                                                                                                                                                                                                                                       |
 
 # Example Usage
 ```
@@ -93,6 +92,5 @@ __NOTE__: `SlidingTabStripAndroid` must have the same number of children as the 
 
 ### Screenshot
 
-![Screenshot]
-(http://benjamin-dobell.github.io/react-native-android-slidingtabstrip/screenshot.png)
+![Screenshot](http://benjamin-dobell.github.io/react-native-android-slidingtabstrip/screenshot.png)
 
