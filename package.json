@@ -29,5 +29,8 @@
   "license": "MIT",
   "devDependencies": {
     "flow-bin": "^0.26.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
   }
 }

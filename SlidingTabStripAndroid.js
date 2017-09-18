@@ -2,7 +2,6 @@
 
 import React, {
   Component,
-  PropTypes
 } from 'react'
 import {
   requireNativeComponent,
@@ -11,6 +10,8 @@ import {
   TextInput,
   View,
 } from 'react-native'
+
+import PropTypes from 'prop-types'
 
 class SlidingTabStripAndroid extends Component {
   props: {
